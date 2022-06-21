@@ -4,3 +4,153 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+body {
+    font-family: 'General Sans', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5.8vw;
+    line-height: 5vw;
+}
+
+h1 .lego {
+    display: block;
+    font-size: 12vw;
+    line-height: 11vw;
+}
+
+h1 .l {
+    color: #D34336;
+}
+
+h1 .e {
+    color: #4EB66B;
+}
+
+h1 .g {
+    color: #49B2DF;
+}
+
+h1 .o {
+    color: #F9D848;
+}
+
+h1 .match {
+    font-size: 8.5vw;
+    line-height: 7.5vw;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    font-weight: bold;
+}
+
+header {
+    background-color: #2A5868;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.headerContent {
+    align-self: center;
+}
+
+svg {
+    flex-basis: 50%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.inputRow {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+.inputRow input {
+    flex-basis: 50%;
+    padding: 10px;    
+    z-index: 1;
+    border-radius: 2px;
+}
+
+.pieces input {
+    border: 5px #EF9140 solid;
+}
+
+.year input {
+    border: 5px #4EB66B solid;
+}
+
+.pieces, .year, button {
+    position: relative;
+}
+
+.pieces {
+    margin-right: 10px;
+}
+
+.pieces::before,
+.year::before,
+button::before {
+            content: "";
+            background-position: top center;
+            background-repeat: repeat-x;
+            position: absolute;
+            height: 1rem;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: -9px;
+}
+.pieces::before {
+    background-image: url(./assets/orangeLegoTop.svg);
+}
+
+.year::before {
+    background-image: url(./assets/greenLegoTop.svg);
+}
+
+button::before {
+    background-image: url(./assets/blueLegoTop.svg);
+    top: -14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #49B2DF;
+    border: 5px #49B2DF solid;
+    border-radius: 2px;
+    color: white;
+    min-width: 50%;
+    margin: 30px 0 0;
+
+}
+
+button:hover {
+    background-color: transparent;
+}
+
