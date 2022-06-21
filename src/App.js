@@ -1,4 +1,5 @@
 import './App.css';
+import Form from './Form';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -31,7 +32,9 @@ function App() {
     <>
      <header>
         <h1>Find your lego match</h1>
+        <Form />
      </header>
+
     </>
   );
 }
