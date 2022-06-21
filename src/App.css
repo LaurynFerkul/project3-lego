@@ -4,13 +4,23 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-size: 125%;
+}
+
 body {
     font-family: 'General Sans', sans-serif;
+    font-size: 1rem;
 }
 
 h1 {
     margin: 0;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
@@ -51,10 +61,6 @@ h1 .match {
     margin: 0 auto;
 }
 
-button {
-    font-weight: bold;
-}
-
 header {
     background-color: #2A5868;
 }
@@ -70,7 +76,7 @@ header .wrapper {
 }
 
 svg {
-    flex-basis: 50%;
+    max-width: 50%;
 }
 
 
@@ -95,6 +101,15 @@ form {
     padding: 10px;    
     z-index: 1;
     border-radius: 2px;
+    font-size: 1rem;
+    color: black;
+    min-width: 0;
+    width: 100%;
+
+}
+.inputRow input::placeholder {
+    color: #2A5868;
+    opacity: 1;
 }
 
 .pieces input {
@@ -120,11 +135,13 @@ button::before {
             background-position: top center;
             background-repeat: repeat-x;
             position: absolute;
-            height: 1rem;
+            background-repeat: no-repeat;
+            height: 100%;
             width: 100%;
             left: 0;
             right: 0;
-            top: -9px;
+            top: -22%;
+            z-index: 0;
 }
 .pieces::before {
     background-image: url(./assets/orangeLegoTop.svg);
@@ -136,10 +153,13 @@ button::before {
 
 button::before {
     background-image: url(./assets/blueLegoTop.svg);
-    top: -14px;
+    top: -33%;
 }
 
 button {
+    font-family: 'General Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     padding: 10px;
     background-color: #49B2DF;
     border: 5px #49B2DF solid;
@@ -154,3 +174,13 @@ button:hover {
     background-color: transparent;
 }
 
+/****************** MEDIA QUERY FOR TABLET START ******************/
+@media (max-width: 900px) { 
+    header .wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+        svg {
+            flex-basis: 30%;
+        }
+}
