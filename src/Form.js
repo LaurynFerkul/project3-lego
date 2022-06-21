@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Form = () => {
+const Form = (props) => {
     const initialInputValues = {
         pieces: "",
         year: "",
@@ -18,7 +18,12 @@ const Form = () => {
     }
             
     return (
-        <form action="">
+        <form 
+            action=""
+            onSubmit={(event) => {
+                props.handleSubmit(event, inputValues)
+            }}
+        >
 
                 <label className="sr-only" htmlFor="pieces">How many pieces?</label>
                 <input
