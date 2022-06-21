@@ -1,5 +1,6 @@
 import './App.css';
 import Form from './Form';
+import DisplayLegoSets from './DisplayLegoSets';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -49,6 +50,7 @@ function App() {
         <h1>Find your lego match</h1>
         <Form handleSubmit={getUserInput} />
      </header>
+     <DisplayLegoSets legoSets={legoSets} />
 
     </>
   );
