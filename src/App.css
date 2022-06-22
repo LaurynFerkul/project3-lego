@@ -149,6 +149,7 @@ button {
     color: white;
     min-width: 100%;
     transition: 1s ease;
+    cursor: pointer;
 }
 
 button:hover, button:focus {

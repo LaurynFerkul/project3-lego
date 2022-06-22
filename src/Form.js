@@ -47,7 +47,7 @@ const Form = (props) => {
                 <div className="input">
                     <img aria-hidden="true" src={greenLegoTop} alt="" />
 
-                    <label className="sr-only" htmlFor="pieces">Number of pieces</label>
+                    <label className="sr-only" htmlFor="pieces">Minimum pieces</label>
                     <input
                         value={inputValues.pieces}
                         onChange={handleChange}
@@ -55,7 +55,7 @@ const Form = (props) => {
                         id="pieces"
                         className="pieces"
                         name="pieces"
-                        placeholder="Number of pieces"
+                        placeholder="Minimum pieces"
                     />
                 </div>
             </div>
