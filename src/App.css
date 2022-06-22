@@ -24,12 +24,17 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    font-size: 5.8vw;
-    line-height: 5vw;
+    font-size: 4.4vw;
+    line-height: 5.4vw;
+}
+
+h1 .block {
+    display: block;
+    font-size: 4.7vw;
+    line-height: 5.7vw;
 }
 
 h1 .lego {
-    display: block;
     font-size: 12vw;
     line-height: 11vw;
 }
@@ -50,11 +55,12 @@ h1 .o {
     color: #F9D848;
 }
 
-h1 .match {
-    font-size: 8.5vw;
-    line-height: 7.5vw;
+p {
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 200;
+    color: #ffffff;
 }
-
 .wrapper {
     max-width: 1260px;
     width: 90%;
@@ -68,7 +74,8 @@ header {
 header .wrapper {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 95vh;
+    position: relative;
 }
 
 .headerContent {
@@ -76,7 +83,7 @@ header .wrapper {
 }
 
 svg {
-    max-width: 50%;
+    max-width: 70%;
 }
 
 
@@ -90,7 +97,8 @@ form {
 
 .inputRow {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -103,11 +111,13 @@ form {
     color: black;
     min-width: 0;
     width: 100%;
-
+    font-family: 'General Sans', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
 }
+
 .inputRow input::placeholder {
     color: #2A5868;
-   
 }
 
 .year {
@@ -124,17 +134,51 @@ form {
 button {
     font-family: 'General Sans', sans-serif;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 6px;
     background-color: #49B2DF;
     border: 5px #49B2DF solid;
     border-radius: 2px;
     color: white;
     min-width: 100%;
+    transition: 1s ease;
 }
 
-button:hover {
+button:hover, button:focus {
     background-color: transparent;
+}
+
+.legoHeads {
+    max-width: 15%;
+    transform: translateY(45%);
+    /* position: absolute;
+    bottom: -4%;
+    left: 0;
+    right: 0; */
+    margin: 0 auto;
+}
+
+/****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
+@media (min-width: 2000px) {
+    h1 {
+        font-size: 3.7rem;
+        line-height: 3.7rem;
+    }
+
+    h1 .block {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    h1 .lego {
+        font-size: 10.4rem;
+        line-height: 9rem;
+    }
+
+    svg {
+        max-width: 55%;
+    }
+
 }
 
 /****************** MEDIA QUERY FOR TABLET START ******************/
@@ -143,7 +187,83 @@ button:hover {
         flex-direction: column-reverse;
         align-items: center;
     }
-        svg {
-            flex-basis: 30%;
-        }
+
+    h1 {
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+
+    h1 .block {
+        font-size: 8.6vw;
+        line-height: 9.6vw;
+    }
+
+    h1 .lego {
+        font-size: 22vw;
+        line-height: 16vw;
+    }
+
+    svg {
+        max-width: 75%;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .legoHeads {
+        max-width: 30%;
+    }
+}
+
+/****************** MEDIA QUERY FOR MOBILE START ******************/
+@media (max-width: 450px) {
+    h1 {
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    h1 .block {
+        font-size: 10.8vw;
+        line-height: 11.8vw;
+    }
+
+    h1 .lego {
+        font-size: 28vw;
+        line-height: 25vw;
+    }
+
+    svg {
+        max-width: 90%;
+    }
+
+    p {
+        font-size: .7rem;
+    }
+
+    .inputRow {
+        flex-direction: column;
+    }
+
+    .input:last-of-type{
+        margin-top: 20px;
+    }
+
+    .inputRow input {
+        padding: 5px;
+        font-size: .7rem;
+    }
+
+    .button {
+        width: 60%;
+    }
+    button {
+        padding: 2.5px;
+        font-size: 1rem;
+    }
+
+    .legoHeads {
+        max-width: 20%;
+    }
 }

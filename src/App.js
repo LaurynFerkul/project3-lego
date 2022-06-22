@@ -2,6 +2,7 @@ import './App.css';
 import Form from './Form';
 import DisplayLegoSets from './DisplayLegoSets';
 import LegoHouse from './LegoHouse';
+import legoHeads from './assets/legoHeads.png';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -51,13 +52,13 @@ return (
     <header>
       <div className='wrapper'>
         <div className='headerContent'>
-          <h1>Find your <span className='lego'><span className='l'>l</span><span className='e'>e</span><span className='g'>g</span><span className='o'>o</span></span> <span className='match'>match</span></h1>
+          <h1>Discover the<span className='block'>past sets of</span><span className='lego'><span className='l'>l</span><span className='e'>e</span><span className='g'>g</span><span className='o'>o</span></span></h1>
+          <p>Find Lego sets and rediscover the allure and imaginative power of these tiny bricks</p>
           <Form handleSubmit={getUserInput} />
         </div>
         <LegoHouse />
       </div>
-
-
+      <img aria-hidden="true" class="legoHeads" src={legoHeads} alt="" />
     </header>
     <DisplayLegoSets legoSets={legoSets} />
 

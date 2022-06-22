@@ -31,9 +31,9 @@ const Form = (props) => {
             <div className="inputRow">
             
                 <div className="input">
-                    <img aria-hidden="true" src={orangeLegoTop} />
+                    <img aria-hidden="true" src={orangeLegoTop} alt="" />
     
-                    <label className="sr-only" htmlFor="year">Year made</label>
+                    <label className="sr-only" htmlFor="year">Year</label>
                     <input
                         value={inputValues.year}
                         onChange={handleChange}
@@ -41,13 +41,13 @@ const Form = (props) => {
                         id="year"
                         className="year"
                         name="year"
-                        placeholder="Year made"
+                        placeholder="Year"
                     />
                 </div>
                 <div className="input">
-                    <img aria-hidden="true" src={greenLegoTop} />
+                    <img aria-hidden="true" src={greenLegoTop} alt="" />
 
-                    <label className="sr-only" htmlFor="pieces">How many pieces?</label>
+                    <label className="sr-only" htmlFor="pieces">Number of pieces</label>
                     <input
                         value={inputValues.pieces}
                         onChange={handleChange}
@@ -55,16 +55,14 @@ const Form = (props) => {
                         id="pieces"
                         className="pieces"
                         name="pieces"
-                        placeholder="How many pieces?"
+                        placeholder="Number of pieces"
                     />
                 </div>
             </div>
-
             <div className="button">
-                <img aria-hidden="true" src={blueLegoTop} />
+                <img aria-hidden="true" src={blueLegoTop} alt="" />
                 <button type="submit">Submit</button>
             </div>
-                
 
         </form>
     )
