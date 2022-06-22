@@ -177,6 +177,7 @@ button:hover, button:focus {
 
     svg {
         max-width: 55%;
+        margin-top: 20px;
     }
 
 }
