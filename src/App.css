@@ -61,6 +61,7 @@ p {
     line-height: 1rem;
     font-weight: 200;
     color: #ffffff;
+    margin: 0;
 }
 .wrapper {
     max-width: 1260px;
@@ -100,9 +101,8 @@ form {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 30px;
+    
 }
-
 
 .inputRow input {
     flex-basis: 50%;
@@ -128,8 +128,14 @@ form {
 .pieces {
     border: 5px #4EB66B solid;
 }
+
+.error {
+    margin: 10px;
+}
+
 .button{
     width: 45%;
+    margin-top: 10px;
 }
 
 button {
@@ -152,10 +158,6 @@ button:hover, button:focus {
 .legoHeads {
     max-width: 15%;
     transform: translateY(45%);
-    /* position: absolute;
-    bottom: -4%;
-    left: 0;
-    right: 0; */
     margin: 0 auto;
 }
 
@@ -300,7 +302,7 @@ footer p {
     }
 
     svg {
-        max-width: 90%;
+        max-width: 50%;
     }
 
     p {

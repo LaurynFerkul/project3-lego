@@ -6,18 +6,15 @@ const displayLegoSets = (props) => {
         <section className="displaySets"> 
             {
             props.legoSets.length === 0 
-                ? (<h2>Sorry no lego sets could be found</h2>)
+                ? null
                 : (
                     <div className="wrapper">
                             <h2>{`Sets found in ${props.legoSets[0].year}`}</h2>
                         <ul>
-                        { props.legoSets.map((legoSet) => {
-
-                            const key = parseInt(legoSet.set_num.replace("-",""))
-
+                        { props.legoSets.map((legoSet, index) => {
+                            const key = {index}
                             return (
                                 <>
-                                    
                                     <li key={key}>
                                         <img className="redLogoTop" aria-hidden="true" src={redLegoTop} alt="" />
                                         <div className="legoSetInfo">
