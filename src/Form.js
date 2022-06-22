@@ -20,6 +20,8 @@ const Form = (props) => {
         });
 
     }
+
+    console.log(props.error)
             
     return (
         <form 
@@ -58,13 +60,18 @@ const Form = (props) => {
                         placeholder="Number of pieces"
                     />
                 </div>
+                {/* {props.error.length === 0 
+                    ? ("") 
+                    : (console.log(props.error.length))
+                } */}
             </div>
             <div className="button">
                 <img aria-hidden="true" src={blueLegoTop} alt="" />
                 <button type="submit">Submit</button>
             </div>
-
+            
         </form>
+        
     )
 }
 

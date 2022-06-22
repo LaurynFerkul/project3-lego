@@ -35,8 +35,10 @@ function App() {
         setLegoSets(res.data.results)
         
       }).catch(function (error) {
-        console.log(error.response.status);
-      })
+        if (error.response){
+            alert("Please try a new input")
+          }
+        })
     }
   }, [userInputValues])
 
