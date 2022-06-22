@@ -215,6 +215,13 @@ h3 {
     object-fit: cover;
 }
 
+footer p {
+    text-align: center;
+    color: #2A5868;
+    border-top: 1px #2A5868 solid;
+    padding: 20px 0 10px;
+}
+
 /****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
 @media (min-width: 2000px) {
     h1 {

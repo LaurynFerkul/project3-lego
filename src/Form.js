@@ -18,7 +18,7 @@ const Form = (props) => {
             ...inputValues,
             [name]: value,
         });
-        console.log("here are inputvalues",inputValues)
+
     }
             
     return (

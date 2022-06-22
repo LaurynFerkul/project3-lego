@@ -13,9 +13,10 @@ function App() {
 
   const [userInputValues, setUserInputValues] = useState([]);
 
+
   useEffect(() => {
     // make an axios call to the Rebrickable Api to get back an array of lego sets
-    console.log("Here are the inputs", userInputValues)
+
     if (userInputValues  && userInputValues.length !== 0 && userInputValues.year !== "") {
       axios({
         baseURL: 'https://rebrickable.com',
@@ -29,10 +30,12 @@ function App() {
           min_parts: userInputValues.pieces,
         }
       }).then((res) => {
-        console.log(res.data.results);
+
         // Store this array of lego sets in state
         setLegoSets(res.data.results)
         
+      }).catch(function (error) {
+        console.log(error.response.status);
       })
     }
   }, [userInputValues])
@@ -58,12 +61,14 @@ return (
         </div>
         <LegoHouse />
       </div>
-      <img aria-hidden="true" class="legoHeads" src={legoHeads} alt="" />
+      <img aria-hidden="true" className="legoHeads" src={legoHeads} alt="" />
     </header>
     <main>
       <DisplayLegoSets legoSets={legoSets} />
     </main>
-
+    <footer>
+      <p>Created at Juno College</p>
+    </footer>
   </>
 );
 }
