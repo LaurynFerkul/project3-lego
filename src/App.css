@@ -16,6 +16,7 @@ html {
 body {
     font-family: 'General Sans', sans-serif;
     font-size: 1rem;
+    background-color: #CFF3FF;
 }
 
 h1 {
@@ -158,6 +159,62 @@ button:hover, button:focus {
     margin: 0 auto;
 }
 
+.displaySets {
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #2A5868;
+    font-size: 3rem;
+    font-family: 'General Sans', sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    flex-basis: calc((100% / 3) - 20px);
+    margin: 10px;
+}
+
+.legoSetInfo {
+        background-color: #D34336;
+        border: 10px #D34336 solid;
+        border-radius: 5px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'General Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.displaySets img.redLogoTop {
+    max-width: 60%;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+.displaySets img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
 /****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
 @media (min-width: 2000px) {
     h1 {
@@ -267,4 +324,21 @@ button:hover, button:focus {
     .legoHeads {
         max-width: 20%;
     }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    li {
+        flex-basis: 70%;
+    }
+
+    h3 {
+        font-size: .9rem;
+    }
+
 }

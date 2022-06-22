@@ -60,7 +60,9 @@ return (
       </div>
       <img aria-hidden="true" class="legoHeads" src={legoHeads} alt="" />
     </header>
-    <DisplayLegoSets legoSets={legoSets} />
+    <main>
+      <DisplayLegoSets legoSets={legoSets} />
+    </main>
 
   </>
 );
