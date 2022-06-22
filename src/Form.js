@@ -1,4 +1,8 @@
 import { useState } from "react";
+import orangeLegoTop from "./assets/orangeLegoTop.svg";
+import greenLegoTop from "./assets/greenLegoTop.svg";
+import blueLegoTop from "./assets/blueLegoTop.svg";
+
 const Form = (props) => {
     const initialInputValues = {
         pieces: "",
@@ -25,30 +29,43 @@ const Form = (props) => {
             }}
         >
             <div className="inputRow">
-                <div className="pieces">
-                    <label className="sr-only" htmlFor="pieces">How many pieces?</label>
-                    <input
-                        value={inputValues.pieces}
-                        onChange={handleChange}
-                        type="text"
-                        id="pieces"
-                        name="pieces"
-                        placeholder="How many pieces?"
-                    />
-                </div>
-                <div className="year">
+            
+                <div className="input">
+                    <img aria-hidden="true" src={orangeLegoTop} />
+    
                     <label className="sr-only" htmlFor="year">Year made</label>
                     <input
                         value={inputValues.year}
                         onChange={handleChange}
                         type="text"
                         id="year"
+                        className="year"
                         name="year"
                         placeholder="Year made"
                     />
                 </div>
+                <div className="input">
+                    <img aria-hidden="true" src={greenLegoTop} />
+
+                    <label className="sr-only" htmlFor="pieces">How many pieces?</label>
+                    <input
+                        value={inputValues.pieces}
+                        onChange={handleChange}
+                        type="text"
+                        id="pieces"
+                        className="pieces"
+                        name="pieces"
+                        placeholder="How many pieces?"
+                    />
+                </div>
             </div>
-            <button type="submit">Submit</button>
+
+            <div className="button">
+                <img aria-hidden="true" src={blueLegoTop} />
+                <button type="submit">Submit</button>
+            </div>
+                
+
         </form>
     )
 }

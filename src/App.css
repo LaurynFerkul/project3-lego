@@ -91,15 +91,13 @@ form {
 .inputRow {
     display: flex;
     justify-content: space-between;
-    position: relative;
-
-
+    margin-bottom: 30px;
 }
+
 
 .inputRow input {
     flex-basis: 50%;
     padding: 10px;    
-    z-index: 1;
     border-radius: 2px;
     font-size: 1rem;
     color: black;
@@ -109,65 +107,30 @@ form {
 }
 .inputRow input::placeholder {
     color: #2A5868;
-    opacity: 1;
+   
 }
 
-.pieces input {
+.year {
     border: 5px #EF9140 solid;
 }
 
-.year input {
+.pieces {
     border: 5px #4EB66B solid;
 }
-
-.pieces, .year, button {
-    position: relative;
-}
-
-.pieces {
-    margin-right: 10px;
-}
-
-.pieces::before,
-.year::before,
-button::before {
-            content: "";
-            background-position: top center;
-            background-repeat: repeat-x;
-            position: absolute;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            right: 0;
-            top: -22%;
-            z-index: 0;
-}
-.pieces::before {
-    background-image: url(./assets/orangeLegoTop.svg);
-}
-
-.year::before {
-    background-image: url(./assets/greenLegoTop.svg);
-}
-
-button::before {
-    background-image: url(./assets/blueLegoTop.svg);
-    top: -33%;
+.button{
+    width: 45%;
 }
 
 button {
     font-family: 'General Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 10px;
+    padding: 6px;
     background-color: #49B2DF;
     border: 5px #49B2DF solid;
     border-radius: 2px;
     color: white;
-    min-width: 50%;
-    margin: 30px 0 0;
-
+    min-width: 100%;
 }
 
 button:hover {

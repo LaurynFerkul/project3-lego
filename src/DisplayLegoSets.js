@@ -11,6 +11,7 @@ const displayLegoSets = (props) => {
                         { props.legoSets.map((legoSet) => {
                             // console.log(legoSet);
                             const key = parseInt(legoSet.set_num.replace("-",""))
+                            console.log(key);
                             return (
                                 <li key={key}>
                                     <img src={legoSet.set_img_url} alt={legoSet.name} />
