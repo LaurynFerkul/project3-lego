@@ -86,6 +86,8 @@ header .wrapper {
 
 svg {
     max-width: 70%;
+    height: fit-content;
+    align-self: center;
 }
 
 
@@ -223,6 +225,287 @@ footer p {
     color: #2A5868;
     border-top: 1px #2A5868 solid;
     padding: 20px 0 10px;
+}
+
+/* Animations */
+.legoPiece{
+    /* animation-name: slideIn;
+    animation-duration:2.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;   */
+    animation: 2.5s .3s 1 forwards slideIn;
+    opacity: 0;
+    
+}
+.legoPiece1 {
+    animation: 2.5s .4s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece2 {
+    animation: 2.5s .45s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece3 {
+    animation: 2.5s .50s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece4 {
+    animation: 2.5s .55s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece5 {
+    animation: 2.5s .60s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece6 {
+    animation: 2.5s .65s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece7 {
+    animation: 2.5s .70s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece8 {
+    animation: 2.5s .75s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece9 {
+    animation: 2.5s .80s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece10 {
+    animation: 2.5s .85s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece11 {
+    animation: 2.5s .90s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece12 {
+    animation: 2.5s 1s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece13 {
+    animation: 2.5s 1.05s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece14 {
+    animation: 2.5s 1.10s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece15 {
+    animation: 2.5s 1.15s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece16 {
+    animation: 2.5s 1.20s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece17 {
+    animation: 2.5s 1.25s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece18 {
+    animation: 2.5s 1.30s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece19 {
+    animation: 2.5s 1.35s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece20 {
+    animation: 2.5s 1.40s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece21 {
+    animation: 2.5s 1.45s 1 forwards slideIn;
+    opacity: 0;
+}
+.legoPiece22 {
+    animation: 2.5s 1.50s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece23 {
+    animation: 2.5s 1.55s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece24 {
+    animation: 2.5s 1.60s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece25 {
+    animation: 2.5s 1.65s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece26 {
+    animation: 2.5s 1.70s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece27 {
+    animation: 2.5s 1.75s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece28 {
+    animation: 2.5s 1.80s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece29 {
+    animation: 2.5s 1.85s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece30 {
+    animation: 2.5s 1.90s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece31 {
+    animation: 2.5s 1.95s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece32 {
+    animation: 2.5s 2s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece33 {
+    animation: 2.5s 2.05s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece34 {
+    animation: 2.5s 2.10s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece35 {
+    animation: 2.5s 2.15s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece36 {
+    animation: 2.5s 2.20s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece37 {
+    animation: 2.5s 2.25s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece38 {
+    animation: 2.5s 2.30s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece39 {
+    animation: 2.5s 2.35s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece40 {
+    animation: 2.5s 2.40s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece41 {
+    animation: 2.5s 2.45s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoPiece42 {
+    animation: 2.5s 2.50s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.chimney1 {
+    animation: 2.5s 2.55s 1 forwards slideIn;
+    opacity: 0;
+}
+.chimney2 {
+    animation: 2.5s 2.60s 1 forwards slideIn;
+    opacity: 0;
+}
+.chimney3 {
+    animation: 2.5s 2.65s 1 forwards slideIn;
+    opacity: 0;
+}
+.mat {
+    animation: 2.5s 2.70s 1 forwards slideIn;
+    opacity: 0;
+}
+.fence1 {
+    animation: 2.5s 2.75s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.fence2 {
+    animation: 2.5s 2.80s 1 forwards slideIn;
+    opacity: 0;
+}
+
+.legoGuy {
+    opacity: 0;
+    animation: 1s 2.80s 1 forwards fadeIn;
+}
+
+/* .doorFrame {
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+} */
+
+.relative {
+    transform-origin: left;
+    transition: all 0.5s ease-in-out;
+}
+
+.relative:hover{
+        transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg)
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: .5;
+    }
+    60% {
+        
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /****************** MEDIA QUERY FOR LARGE SCREENS START ******************/
